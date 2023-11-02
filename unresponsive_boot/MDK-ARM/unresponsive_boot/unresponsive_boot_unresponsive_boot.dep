@@ -1,0 +1,890 @@
+Dependencies for Project 'unresponsive_boot', Target 'unresponsive_boot': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32g0b1xx.s)(0x6543128E)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32G0B1xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g0b1xx.lst --xref -o unresponsive_boot\startup_stm32g0b1xx.o --depend unresponsive_boot\startup_stm32g0b1xx.d)
+F (../Core/Src/main.c)(0x654315C3)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\main.o --omf_browse unresponsive_boot\main.crf --depend unresponsive_boot\main.d)
+I (../Core/Inc/main.h)(0x654307B2)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+F (../Core/Src/stm32g0xx_it.c)(0x654307B1)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_it.o --omf_browse unresponsive_boot\stm32g0xx_it.crf --depend unresponsive_boot\stm32g0xx_it.d)
+I (../Core/Inc/main.h)(0x654307B2)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+F (../Core/Src/stm32g0xx_hal_msp.c)(0x65430C10)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_msp.o --omf_browse unresponsive_boot\stm32g0xx_hal_msp.crf --depend unresponsive_boot\stm32g0xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x654307B2)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fdcan.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_fdcan.o --omf_browse unresponsive_boot\stm32g0xx_hal_fdcan.crf --depend unresponsive_boot\stm32g0xx_hal_fdcan.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_rcc.o --omf_browse unresponsive_boot\stm32g0xx_hal_rcc.crf --depend unresponsive_boot\stm32g0xx_hal_rcc.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_rcc_ex.o --omf_browse unresponsive_boot\stm32g0xx_hal_rcc_ex.crf --depend unresponsive_boot\stm32g0xx_hal_rcc_ex.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_ll_rcc.o --omf_browse unresponsive_boot\stm32g0xx_ll_rcc.crf --depend unresponsive_boot\stm32g0xx_ll_rcc.d)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_flash.o --omf_browse unresponsive_boot\stm32g0xx_hal_flash.crf --depend unresponsive_boot\stm32g0xx_hal_flash.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_flash_ex.o --omf_browse unresponsive_boot\stm32g0xx_hal_flash_ex.crf --depend unresponsive_boot\stm32g0xx_hal_flash_ex.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_gpio.o --omf_browse unresponsive_boot\stm32g0xx_hal_gpio.crf --depend unresponsive_boot\stm32g0xx_hal_gpio.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_dma.o --omf_browse unresponsive_boot\stm32g0xx_hal_dma.crf --depend unresponsive_boot\stm32g0xx_hal_dma.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_dma_ex.o --omf_browse unresponsive_boot\stm32g0xx_hal_dma_ex.crf --depend unresponsive_boot\stm32g0xx_hal_dma_ex.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_ll_dma.o --omf_browse unresponsive_boot\stm32g0xx_ll_dma.crf --depend unresponsive_boot\stm32g0xx_ll_dma.d)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_pwr.o --omf_browse unresponsive_boot\stm32g0xx_hal_pwr.crf --depend unresponsive_boot\stm32g0xx_hal_pwr.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_pwr_ex.o --omf_browse unresponsive_boot\stm32g0xx_hal_pwr_ex.crf --depend unresponsive_boot\stm32g0xx_hal_pwr_ex.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_cortex.o --omf_browse unresponsive_boot\stm32g0xx_hal_cortex.crf --depend unresponsive_boot\stm32g0xx_hal_cortex.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal.o --omf_browse unresponsive_boot\stm32g0xx_hal.crf --depend unresponsive_boot\stm32g0xx_hal.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_exti.o --omf_browse unresponsive_boot\stm32g0xx_hal_exti.crf --depend unresponsive_boot\stm32g0xx_hal_exti.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_tim.o --omf_browse unresponsive_boot\stm32g0xx_hal_tim.crf --depend unresponsive_boot\stm32g0xx_hal_tim.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c)(0x6478728E)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32g0xx_hal_tim_ex.o --omf_browse unresponsive_boot\stm32g0xx_hal_tim_ex.crf --depend unresponsive_boot\stm32g0xx_hal_tim_ex.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (../Core/Src/system_stm32g0xx.c)(0x64787287)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\system_stm32g0xx.o --omf_browse unresponsive_boot\system_stm32g0xx.crf --depend unresponsive_boot\system_stm32g0xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+F (..\User\Middle\CAN_CircularBuf.c)(0x65431677)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\can_circularbuf.o --omf_browse unresponsive_boot\can_circularbuf.crf --depend unresponsive_boot\can_circularbuf.d)
+I (..\User\Middle\CAN_CircularBuf.h)(0x6503EEF9)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (../Core/Inc/main.h)(0x654307B2)
+I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (..\User\Drv\can.h)(0x6503EEF9)
+F (..\User\Middle\sys.c)(0x6543A4A7)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\sys.o --omf_browse unresponsive_boot\sys.crf --depend unresponsive_boot\sys.d)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (../Core/Inc/main.h)(0x654307B2)
+F (..\User\Comm_Update\comm_update_handle.c)(0x6543A5C6)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\comm_update_handle.o --omf_browse unresponsive_boot\comm_update_handle.crf --depend unresponsive_boot\comm_update_handle.d)
+I (..\User\Comm_Update\comm_update_handle.h)(0x6543A67B)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (../Core/Inc/main.h)(0x654307B2)
+I (..\User\Middle\CAN_CircularBuf.h)(0x6503EEF9)
+I (..\User\Drv\stm32flash.h)(0x6543A67B)
+I (..\User\Drv\can.h)(0x6503EEF9)
+F (..\User\Drv\can.c)(0x654310AC)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\can.o --omf_browse unresponsive_boot\can.crf --depend unresponsive_boot\can.d)
+I (..\User\Drv\can.h)(0x6503EEF9)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (../Core/Inc/main.h)(0x654307B2)
+I (..\User\Middle\CAN_CircularBuf.h)(0x6503EEF9)
+F (..\User\Drv\stm32flash.c)(0x6543A67B)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\stm32flash.o --omf_browse unresponsive_boot\stm32flash.crf --depend unresponsive_boot\stm32flash.d)
+I (..\User\Drv\stm32flash.h)(0x6543A67B)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (../Core/Inc/main.h)(0x654307B2)
+I (..\User\RTT\SEGGER_RTT.h)(0x6503EEF9)
+I (..\User\RTT\SEGGER_RTT_Conf.h)(0x6503EEF9)
+I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\stdarg.h)(0x60252376)
+F (..\User\Drv\timer.c)(0x6503EEF9)(--c99 -c --cpu Cortex-M0+ -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\User\Middle -I ..\User\Drv -I ..\User\RTT-I.\RTE\_unresponsive_boot-IE:\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G0B1xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G0B1xx-o unresponsive_boot\timer.o --omf_browse unresponsive_boot\timer.crf --depend unresponsive_boot\timer.d)
+I (..\User\Drv\timer.h)(0x6503EEF9)
+I (..\User\Middle\sys.h)(0x6543A4B4)
+I (../Core/Inc/stm32g0xx_it.h)(0x654307B1)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x6478728D)
+I (../Core/Inc/stm32g0xx_hal_conf.h)(0x65430C10)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x64787287)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0b1xx.h)(0x64787287)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6478728D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6478728D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x64787287)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6478728E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_fdcan.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h)(0x6478728D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h)(0x6478728D)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (E:\Keil\ARM\ARMCC\include\string.h)(0x6025237E)
+I (E:\Keil\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (../Core/Inc/main.h)(0x654307B2)
