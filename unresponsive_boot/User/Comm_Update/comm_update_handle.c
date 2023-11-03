@@ -1,20 +1,22 @@
 /**
  *  comm_update_handle.c
  *  @Author: CJQ2805
- *  2023/1/28  8:55
+ *  2023/11/3  8:55
  */ 
 #include "comm_update_handle.h"
 #include "CAN_CircularBuf.h"
 #include "stm32flash.h"
 #include "can.h"
-
-struct _comm_update_handle_t   gt_comm_update_handle;
-
-
-
 uint8_t binString1[] = "SCUD-BMS";
 uint8_t binString2[] = "COMOTOMO";
 uint8_t binString3[] = "00000000";
+
+struct _comm_update_handle_t   gt_comm_update_handle;
+
+void bms_update_start(pt_can_packet  ptrx_packet);
+void bms_UpdateChuck(pt_can_packet  ptrx_packet);
+void bms_update_apply(pt_can_packet  ptrx_packet);
+void bms_get_update_status(void);
 
 void CAN_DataDecode(void)
 {
@@ -43,11 +45,13 @@ void CAN_DataDecode(void)
 		
 		case BMS_UPDATE_START: 	       //  R/W
 		
+		bms_update_start(&trx_packet);
 		
 		break;
 		
 		case BMS_UPDATE_STATUS:	       //  R
 		
+		bms_get_update_status();
 		
 		break;
 		
@@ -58,11 +62,13 @@ void CAN_DataDecode(void)
 		
 		case BMS_UPDATE_CHUCK:		  //  R/W
  		
+		bms_UpdateChuck(&trx_packet);
 		
 		break;
 		
 		case BMS_UPDATE_APPLY:        //  R/W
 			
+		bms_update_apply(&trx_packet);
 		
 		break;
 		
@@ -96,6 +102,16 @@ void bms_update_start(pt_can_packet  ptrx_packet)
 	{
 		gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = RECEIVING;
 	}
+	
+	gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;
+	gt_comm_update_handle.u32bin_addr = FLASH_APPBACKUPS_START_ADDR;
+	
+	gt_comm_update_handle.u16bin_num = 0;	
+	gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC = 0;
+	gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum = 0;
+	gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC = 0;
+	gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize = 0;
+	
 }
 
 void bms_get_update_status(void)
@@ -104,7 +120,6 @@ void bms_get_update_status(void)
 	au8data[0] = gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus;
 	can_tx(BMS_UPDATE_STATUS,au8data,1);
 }
-
 
 
 void bms_UpdateChuck(pt_can_packet  ptrx_packet)
@@ -198,10 +213,21 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 			
 			for(uint8_t i = 0; i < 8; i++)
 			{
-				
+				if(gt_comm_update_handle.u16bin_num >= 256)
+				{
+					gt_comm_update_handle.u16bin_num = 0;
+				}
+				gt_comm_update_handle.au8bin_buf[gt_comm_update_handle.u16bin_num++] = ptrx_packet->au8data[i];
 			
 			}
 			
+			if((gt_comm_update_handle.u16bin_num == 256) && (gt_comm_update_handle.u32bin_addr < (FLASH_APPBACKUPS_END_ADDR - 256)))
+			{
+				gt_comm_update_handle.u16bin_num = 0;
+				Flash_Write(gt_comm_update_handle.u32bin_addr,gt_comm_update_handle.au8bin_buf,256);
+				memset(gt_comm_update_handle.au8bin_buf, 0x00, 256);
+				gt_comm_update_handle.u32bin_addr = gt_comm_update_handle.u32bin_addr + 256;
+			}
 			
 			break;
 		
@@ -211,8 +237,154 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 }
 
 
+void bms_update_apply(pt_can_packet  ptrx_packet)
+{
+	gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;
+	
+	if(ptrx_packet->au8data[0] == 0x00)   //读
+	{
+
+	}
+	else if(ptrx_packet->au8data[0] == 0x01) // 写
+	{
+		if(ptrx_packet->au8data[1] == 0x01)
+		{
+			if((gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC == gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC) && \
+			   (gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum == gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize) && \
+			   (gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize != 0))
+			{
+				gt_comm_update_handle.u8fw_apply = ptrx_packet->au8data[1];
+			}
+			else
+			{
+				gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = IN_BOOTLOADER;
+				gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC = 0;
+				gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC = 0;
+				gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum = 0;
+				gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize = 0;
+				
+				if((gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC != gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC) || \
+					(gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize == 0))
+				{
+					//CRC错误
+				}
+				else
+				{
+					//ERROR CHUNK
+				}
+			}
+		}
+		else if(ptrx_packet->au8data[1] == 0x00)
+		{
+			//取消升级
+			gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = IN_BOOTLOADER;
+			gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC = 0;
+			gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC = 0;
+			gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum = 0;
+			gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize = 0;			
+		}
+		else
+		{
+			//错误的写
+		}
+					
+	}
+}
+
+
+
 void bms_update_acked_chuck(pt_can_packet  ptrx_packet)
 {
 
 }
+
+
+
+
+
+void ChipFlashDownload_Process(void)
+{
+	if(gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus != RECEIVING)
+	{
+		return;
+	}	
+
+	uint8_t au8bootTempData[4] = {0};	
+	uint32_t u32AddrApp = FLASH_APPBACKUPS_START_ADDR;	
+	uint32_t u32TempCRC32 = 0;	
+	uint32_t  i,u32cnt;	
+	
+	if(gt_comm_update_handle.u8fw_apply == 0x01)
+	{
+		gt_comm_update_handle.u8fw_apply = 0;
+		
+		if(gt_comm_update_handle.u16bin_num != 0)
+		{
+			gt_comm_update_handle.u16bin_num = 0;
+			Flash_Write(gt_comm_update_handle.u32bin_addr,gt_comm_update_handle.au8bin_buf,256);
+			memset(gt_comm_update_handle.au8bin_buf, 0x00, sizeof(gt_comm_update_handle.au8bin_buf));
+			gt_comm_update_handle.u32bin_addr = FLASH_APPBACKUPS_START_ADDR;
+		}
+		
+		if(gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum % 256)
+		{
+			u32cnt = gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum / 256 + 1;
+			
+			for(i = 0; i < u32cnt; i++)
+			{
+				Flash_Read(u32AddrApp,gt_comm_update_handle.au8bin_buf,256);				
+			
+				u32AddrApp = u32AddrApp +256;
+			}
+			
+			if(i == (u32cnt - 1))
+			{
+				u32TempCRC32 = crc32_compute((uint8_t*)gt_comm_update_handle.au8bin_buf, gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum - (i * 256), &u32TempCRC32);
+			}
+			else
+			{
+				u32TempCRC32 = crc32_compute((uint8_t*)gt_comm_update_handle.au8bin_buf, 256, &u32TempCRC32);
+			}			
+			
+		}
+		else
+		{
+			u32cnt = gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum / 256;
+			for( i = 0; i < u32cnt; i ++ )
+			{
+				Flash_Read(u32AddrApp,gt_comm_update_handle.au8bin_buf,256);	
+				
+				u32AddrApp = u32AddrApp + 256;
+				u32TempCRC32 = crc32_compute((uint8_t*)gt_comm_update_handle.au8bin_buf, 256, &u32TempCRC32);
+			}
+		}
+		
+		if(u32TempCRC32 != gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC)
+		{
+			gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC = 0;
+			gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum = 0;
+			
+			return ;
+		}
+		
+        //修改标志位 传递包数
+		au8bootTempData[0] = (uint8_t)APP_UPDATING;
+		au8bootTempData[1] = (uint8_t)APP_UPDATING;
+		au8bootTempData[2] = (uint8_t)APP_UPDATING;
+		au8bootTempData[3] = (uint8_t)APP_UPDATING;
+		Flash_Write(FLASH_BOOTFLAG_ADDRESS, au8bootTempData, 4);
+
+		au8bootTempData[0] = (uint8_t)gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum;
+		au8bootTempData[1] = (uint8_t)(gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum >> 8);
+		au8bootTempData[2] = (uint8_t)(gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum >> 16);
+		au8bootTempData[3] = (uint8_t)(gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum >> 24);
+		Flash_Write(FLASH_APPLEN_ADDRESS, au8bootTempData, 4);		
+	
+        //开始跳转		
+		HAL_NVIC_SystemReset();
+	}
+}
+
+
+
 

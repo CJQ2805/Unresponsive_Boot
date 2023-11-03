@@ -59,11 +59,12 @@ struct _comm_update_handle_t{
 	u16 u16bin_num;
 	u32 u32bin_addr;
 	
+	u8 u8fw_apply;
 	
 };
 
 extern struct _comm_update_handle_t   gt_comm_update_handle;
 
-
-
+void ChipFlashDownload_Process(void);
+void CAN_DataDecode(void);
 #endif

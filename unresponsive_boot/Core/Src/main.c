@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "sys.h"
+#include "comm_update_handle.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,7 +102,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	CAN_DataDecode();
+	ChipFlashDownload_Process();  
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
