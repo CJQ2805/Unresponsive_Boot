@@ -33,9 +33,11 @@ unresponsive_boot\main.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.
 unresponsive_boot\main.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h
 unresponsive_boot\main.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h
 unresponsive_boot\main.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h
-unresponsive_boot\main.o: ..\User\Middle\sys.h
+unresponsive_boot\main.o: ../User/Middle/sys.h
 unresponsive_boot\main.o: ../Core/Inc/stm32g0xx_it.h
 unresponsive_boot\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 unresponsive_boot\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\string.h
 unresponsive_boot\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
-unresponsive_boot\main.o: ..\User\Comm_Update\comm_update_handle.h
+unresponsive_boot\main.o: ../User/Comm_Update/comm_update_handle.h
+unresponsive_boot\main.o: ../User/Comm_Update/flash_update_handle.h
+unresponsive_boot\main.o: ../User/Middle/CAN_CircularBuf.h

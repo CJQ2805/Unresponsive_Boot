@@ -23,6 +23,9 @@
 /* USER CODE BEGIN Includes */
 #include "sys.h"
 #include "comm_update_handle.h"
+#include "flash_update_handle.h"
+#include "CAN_CircularBuf.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,16 +97,21 @@ int main(void)
   MX_FDCAN1_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  
+  gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = IN_BOOTLOADER;
+  BootFlag_Diag();
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 	CAN_DataDecode();
-	ChipFlashDownload_Process();  
+	ChipFlashDownload_Process();
+	AppUpdate_Process();  
+    /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

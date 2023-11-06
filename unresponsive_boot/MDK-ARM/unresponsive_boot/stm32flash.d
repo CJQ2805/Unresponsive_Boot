@@ -1,6 +1,6 @@
 unresponsive_boot\stm32flash.o: ..\User\Drv\stm32flash.c
 unresponsive_boot\stm32flash.o: ..\User\Drv\stm32flash.h
-unresponsive_boot\stm32flash.o: ..\User\Middle\sys.h
+unresponsive_boot\stm32flash.o: ../User/Middle/sys.h
 unresponsive_boot\stm32flash.o: ../Core/Inc/stm32g0xx_it.h
 unresponsive_boot\stm32flash.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h
 unresponsive_boot\stm32flash.o: ../Core/Inc/stm32g0xx_hal_conf.h
@@ -39,7 +39,7 @@ unresponsive_boot\stm32flash.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 unresponsive_boot\stm32flash.o: E:\Keil\ARM\ARMCC\Bin\..\include\string.h
 unresponsive_boot\stm32flash.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 unresponsive_boot\stm32flash.o: ../Core/Inc/main.h
-unresponsive_boot\stm32flash.o: ..\User\RTT\SEGGER_RTT.h
-unresponsive_boot\stm32flash.o: ..\User\RTT\SEGGER_RTT_Conf.h
+unresponsive_boot\stm32flash.o: ../User/RTT/SEGGER_RTT.h
+unresponsive_boot\stm32flash.o: ../User/RTT/SEGGER_RTT_Conf.h
 unresponsive_boot\stm32flash.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 unresponsive_boot\stm32flash.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h

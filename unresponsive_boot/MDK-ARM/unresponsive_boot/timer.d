@@ -1,6 +1,6 @@
 unresponsive_boot\timer.o: ..\User\Drv\timer.c
 unresponsive_boot\timer.o: ..\User\Drv\timer.h
-unresponsive_boot\timer.o: ..\User\Middle\sys.h
+unresponsive_boot\timer.o: ../User/Middle/sys.h
 unresponsive_boot\timer.o: ../Core/Inc/stm32g0xx_it.h
 unresponsive_boot\timer.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h
 unresponsive_boot\timer.o: ../Core/Inc/stm32g0xx_hal_conf.h

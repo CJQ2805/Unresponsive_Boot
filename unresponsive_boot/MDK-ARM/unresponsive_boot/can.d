@@ -1,6 +1,6 @@
 unresponsive_boot\can.o: ..\User\Drv\can.c
 unresponsive_boot\can.o: ..\User\Drv\can.h
-unresponsive_boot\can.o: ..\User\Middle\sys.h
+unresponsive_boot\can.o: ../User/Middle/sys.h
 unresponsive_boot\can.o: ../Core/Inc/stm32g0xx_it.h
 unresponsive_boot\can.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h
 unresponsive_boot\can.o: ../Core/Inc/stm32g0xx_hal_conf.h
@@ -39,4 +39,4 @@ unresponsive_boot\can.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 unresponsive_boot\can.o: E:\Keil\ARM\ARMCC\Bin\..\include\string.h
 unresponsive_boot\can.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 unresponsive_boot\can.o: ../Core/Inc/main.h
-unresponsive_boot\can.o: ..\User\Middle\CAN_CircularBuf.h
+unresponsive_boot\can.o: ../User/Middle/CAN_CircularBuf.h

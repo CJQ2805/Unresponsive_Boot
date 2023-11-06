@@ -40,4 +40,4 @@ unresponsive_boot\can_circularbuf.o: E:\Keil\ARM\ARMCC\Bin\..\include\string.h
 unresponsive_boot\can_circularbuf.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 unresponsive_boot\can_circularbuf.o: ../Core/Inc/main.h
 unresponsive_boot\can_circularbuf.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
-unresponsive_boot\can_circularbuf.o: ..\User\Drv\can.h
+unresponsive_boot\can_circularbuf.o: ../User/Drv/can.h

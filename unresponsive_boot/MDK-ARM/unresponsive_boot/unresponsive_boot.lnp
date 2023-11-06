@@ -24,9 +24,12 @@
 "unresponsive_boot\can_circularbuf.o"
 "unresponsive_boot\sys.o"
 "unresponsive_boot\comm_update_handle.o"
+"unresponsive_boot\flash_update_handle.o"
 "unresponsive_boot\can.o"
 "unresponsive_boot\stm32flash.o"
 "unresponsive_boot\timer.o"
+"unresponsive_boot\segger_rtt.o"
+"unresponsive_boot\segger_rtt_printf.o"
 --strict --scatter "unresponsive_boot\unresponsive_boot.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

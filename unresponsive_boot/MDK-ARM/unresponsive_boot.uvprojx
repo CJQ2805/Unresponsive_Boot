@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32G0B1xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32G0xx_HAL_Driver/Inc;../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G0xx/Include;../Drivers/CMSIS/Include;..\User\Middle;..\User\Drv;..\User\RTT;..\User\Comm_Update</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32G0xx_HAL_Driver/Inc;../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G0xx/Include;../Drivers/CMSIS/Include;../User/Middle;../User/Drv;../User/RTT;../User/Comm_Update</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -526,12 +526,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Comm_Update</GroupName>
+          <GroupName>BOOT_Update</GroupName>
           <Files>
             <File>
               <FileName>comm_update_handle.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Comm_Update\comm_update_handle.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash_update_handle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Comm_Update\flash_update_handle.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -552,6 +557,21 @@
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Drv\timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
           </Files>
         </Group>

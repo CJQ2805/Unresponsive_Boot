@@ -1,6 +1,6 @@
 unresponsive_boot\comm_update_handle.o: ..\User\Comm_Update\comm_update_handle.c
 unresponsive_boot\comm_update_handle.o: ..\User\Comm_Update\comm_update_handle.h
-unresponsive_boot\comm_update_handle.o: ..\User\Middle\sys.h
+unresponsive_boot\comm_update_handle.o: ../User/Middle/sys.h
 unresponsive_boot\comm_update_handle.o: ../Core/Inc/stm32g0xx_it.h
 unresponsive_boot\comm_update_handle.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h
 unresponsive_boot\comm_update_handle.o: ../Core/Inc/stm32g0xx_hal_conf.h
@@ -39,6 +39,6 @@ unresponsive_boot\comm_update_handle.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 unresponsive_boot\comm_update_handle.o: E:\Keil\ARM\ARMCC\Bin\..\include\string.h
 unresponsive_boot\comm_update_handle.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 unresponsive_boot\comm_update_handle.o: ../Core/Inc/main.h
-unresponsive_boot\comm_update_handle.o: ..\User\Middle\CAN_CircularBuf.h
-unresponsive_boot\comm_update_handle.o: ..\User\Drv\stm32flash.h
-unresponsive_boot\comm_update_handle.o: ..\User\Drv\can.h
+unresponsive_boot\comm_update_handle.o: ../User/Middle/CAN_CircularBuf.h
+unresponsive_boot\comm_update_handle.o: ../User/Drv/stm32flash.h
+unresponsive_boot\comm_update_handle.o: ../User/Drv/can.h
