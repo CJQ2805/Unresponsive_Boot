@@ -95,7 +95,7 @@ void bms_update_start(pt_can_packet  ptrx_packet)
 //	gt_comm_update_handle.tcomm_update_data.u32FWUpateBinCRC = ((uint32_t)ptrx_packet->au8data[7]);	
 	
 
-	gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = RECEIVING;
+	gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = FIRM_RECEIVING;
 	
 	gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;
 	gt_comm_update_handle.u32bin_addr = FLASH_APPBACKUPS_START_ADDR;
@@ -123,7 +123,7 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 {
 	uint8_t u8lenEnd = 0;
 	
-	if(gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus == RECEIVING)
+	if(gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus == FIRM_RECEIVING)
 	{
 		
 		switch(gt_comm_update_handle.ebms_update_chuck)
@@ -270,7 +270,7 @@ void bms_update_apply(pt_can_packet  ptrx_packet)
 					gt_comm_update_handle.u8fw_apply = ptrx_packet->au8data[1];
 					au8data[0] = ptrx_packet->au8data[0];
 					au8data[1] = 0xF0;
-					can_tx(BMS_UPDATE_STATUS,au8data,2);						
+					can_tx(BMS_UPDATE_ERROR,au8data,2);						
 					
 				}
 				else
@@ -278,11 +278,11 @@ void bms_update_apply(pt_can_packet  ptrx_packet)
 					gt_comm_update_handle.u8fw_apply = ptrx_packet->au8data[1];
 					au8data[0] = ptrx_packet->au8data[0];
 					au8data[1] = 0xF1;
-					can_tx(BMS_UPDATE_STATUS,au8data,2);					
+					can_tx(BMS_UPDATE_ERROR,au8data,2);					
 					//ERROR CHUNK
 				}
 				
-				gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = IN_BOOTLOADER;
+				gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = FIRM_IN_BOOTLOADER;
 				gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC = 0;
 				gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC = 0;
 				gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum = 0;
@@ -292,7 +292,7 @@ void bms_update_apply(pt_can_packet  ptrx_packet)
 		else if(ptrx_packet->au8data[1] == 0x00)
 		{
 			//取消升级
-			gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = IN_BOOTLOADER;
+			gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = FIRM_IN_BOOTLOADER;
 			gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC = 0;
 			gt_comm_update_handle.tcomm_update_data.u32FWCalcBinCRC = 0;
 			gt_comm_update_handle.tcomm_update_data.u32FWCalcBinNum = 0;
@@ -305,7 +305,7 @@ void bms_update_apply(pt_can_packet  ptrx_packet)
 		{
 			au8data[0] = ptrx_packet->au8data[0];
 			au8data[1] = 0xF2;
-			can_tx(BMS_UPDATE_STATUS,au8data,2);				
+			can_tx(BMS_UPDATE_ERROR,au8data,2);				
 			//错误的写
 		}
 					

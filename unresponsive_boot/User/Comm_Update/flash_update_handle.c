@@ -9,7 +9,7 @@
 
 void ChipFlashDownload_Process(void)
 {
-	if(gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus != RECEIVING)
+	if(gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus != FIRM_RECEIVING)
 	{
 		return;
 	}	
@@ -137,7 +137,7 @@ uint8_t BootFlag_Diag(void)
     uint32_t u32BootState_Flag = 0;
 
     u32BootState_Flag = BootFlagState_Read();
-    if((u32BootState_Flag == APP_OK) )//|| (u32BootState_Flag == APP_INIT))
+    if((u32BootState_Flag == APP_OK)  || (u32BootState_Flag == APP_INIT))
     {
         JumpToAPP();
 		HAL_Delay(50);
@@ -148,6 +148,7 @@ uint8_t BootFlag_Diag(void)
 
 uint8_t AppUpdate_Process(void)
 {
+	//SEGGER_RTT_printf(0,"AppUpdate_Process\r\n");
     uint32_t  i,cnt;
     uint32_t u32BootState_Flag = 0;
     uint32_t u32AppUpdatePacKLen = 0;
@@ -185,6 +186,7 @@ uint8_t AppUpdate_Process(void)
             data[2] = (uint8_t)APP_UPDATA_JUMP;
             data[3] = (uint8_t)APP_UPDATA_JUMP;
             BootFlagState_Write(data);
+			SEGGER_RTT_printf(0,"JumpToAPP \r\n");	
             JumpToAPP();
 			HAL_Delay(50);
         }

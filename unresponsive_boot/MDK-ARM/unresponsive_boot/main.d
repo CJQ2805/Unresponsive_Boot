@@ -41,3 +41,7 @@ unresponsive_boot\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
 unresponsive_boot\main.o: ../User/Comm_Update/comm_update_handle.h
 unresponsive_boot\main.o: ../User/Comm_Update/flash_update_handle.h
 unresponsive_boot\main.o: ../User/Middle/CAN_CircularBuf.h
+unresponsive_boot\main.o: ../User/RTT/SEGGER_RTT.h
+unresponsive_boot\main.o: ../User/RTT/SEGGER_RTT_Conf.h
+unresponsive_boot\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+unresponsive_boot\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h

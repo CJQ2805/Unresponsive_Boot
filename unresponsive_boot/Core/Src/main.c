@@ -25,7 +25,7 @@
 #include "comm_update_handle.h"
 #include "flash_update_handle.h"
 #include "CAN_CircularBuf.h"
-
+#include "SEGGER_RTT.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -80,9 +80,9 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
+  HAL_Delay(100);
   /* USER CODE BEGIN Init */
-
+  SEGGER_RTT_printf(0,"IN BOOT\r\n");
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -98,7 +98,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   
-  gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = IN_BOOTLOADER;
+  gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus = FIRM_IN_BOOTLOADER;
   BootFlag_Diag();
   
   /* USER CODE END 2 */

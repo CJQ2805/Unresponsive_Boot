@@ -8,11 +8,10 @@
 #include "sys.h"
 
 //Firmware update status
-#define		IDLE							0x00
-#define 	IN_BOOTLOADER					0x01
-#define		PREPARING						0x02
-#define		RECEIVING						0x03
-#define		APPLYING						0x10
+#define		FIRM_IDLE							0x00
+#define 	FIRM_IN_BOOTLOADER					0x01
+#define		FIRM_RECEIVING						0x03
+#define		FIRM_APPLYING						0x10
 
 
 enum _bms_update_chuck_e{

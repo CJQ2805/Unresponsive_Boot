@@ -3,11 +3,11 @@
 <title>Static Call Graph - [unresponsive_boot\unresponsive_boot.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image unresponsive_boot\unresponsive_boot.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Nov 06 09:54:03 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Nov 08 15:20:20 2023
 <BR><P>
-<H3>Maximum Stack Usage =        416 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        632 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-__rt_entry_main &rArr; main &rArr; AppUpdate_Process &rArr; BootFlagState_Write &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+__rt_entry_main &rArr; main &rArr; AppUpdate_Process &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
 <P>
 <H3>
 Functions with no stack information
@@ -83,9 +83,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[b4]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[c2]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[b5]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[c3]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
 <P><STRONG><a name="[39]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -93,13 +93,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[b6]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[c4]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[3f]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[b7]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[c5]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
 <P><STRONG><a name="[3a]"></a>__rt_lib_init_heap_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000005))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
@@ -108,72 +108,72 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 </UL>
 
-<P><STRONG><a name="[b8]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[c6]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[b9]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[c7]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[ba]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[c8]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[bb]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[c9]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[bc]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[ca]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[bd]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[cb]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[be]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[cc]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[bf]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[cd]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[c0]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[ce]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[c1]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[cf]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[c2]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[d0]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[c3]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[d1]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[c4]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[d2]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[c5]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[d3]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[c6]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[d4]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[c7]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[d5]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[c8]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[d6]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[c9]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[d7]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[ca]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[d8]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[cb]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[d9]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
 <P><STRONG><a name="[44]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[cc]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[da]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[cd]"></a>__rt_lib_shutdown_fini_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[db]"></a>__rt_lib_shutdown_fini_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[ce]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+<P><STRONG><a name="[dc]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
 
-<P><STRONG><a name="[cf]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))
+<P><STRONG><a name="[dd]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))
 
-<P><STRONG><a name="[d0]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))
+<P><STRONG><a name="[de]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))
 
-<P><STRONG><a name="[d1]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[df]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
-<P><STRONG><a name="[d2]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+<P><STRONG><a name="[e0]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
 
-<P><STRONG><a name="[d3]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+<P><STRONG><a name="[e1]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
 
 <P><STRONG><a name="[37]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
-<P><STRONG><a name="[d4]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[e2]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[3c]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -186,17 +186,17 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[d5]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[e3]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[40]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; AppUpdate_Process &rArr; BootFlagState_Write &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+<BR><BR>[Stack]<UL><LI>Max Depth = 632 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; AppUpdate_Process &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[d6]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[e4]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[5a]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -206,7 +206,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[d7]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[e5]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[45]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -216,12 +216,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 
-<P><STRONG><a name="[d8]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text), UNUSED)
+<P><STRONG><a name="[e6]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text), UNUSED)
 
 <P><STRONG><a name="[e]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32g0b1xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
-<P><STRONG><a name="[d9]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
+<P><STRONG><a name="[e7]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
 
 <P><STRONG><a name="[20]"></a>ADC1_COMP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32g0b1xx.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_COMP_IRQHandler
@@ -324,28 +324,30 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_circulbuf_init
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_circulbuf_init
 </UL>
 
-<P><STRONG><a name="[73]"></a>__aeabi_llsl</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, llshl.o(.text))
+<P><STRONG><a name="[75]"></a>__aeabi_llsl</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, llshl.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_llsl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
 </UL>
 
-<P><STRONG><a name="[da]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[e8]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[4a]"></a>__aeabi_memcpy</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, rt_memcpy.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_data
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_WriteNoCheck
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_WriteBlocking
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_data
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
 </UL>
 
-<P><STRONG><a name="[db]"></a>__rt_memcpy</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, rt_memcpy.o(.text), UNUSED)
+<P><STRONG><a name="[e9]"></a>__rt_memcpy</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, rt_memcpy.o(.text), UNUSED)
 
 <P><STRONG><a name="[4d]"></a>_memset_w</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memclr_w
@@ -362,45 +364,51 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset
 </UL>
 
-<P><STRONG><a name="[dc]"></a>__rt_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
+<P><STRONG><a name="[ea]"></a>__rt_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
 
 <P><STRONG><a name="[5e]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DoInit
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
 </UL>
 
-<P><STRONG><a name="[dd]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
+<P><STRONG><a name="[eb]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
 
 <P><STRONG><a name="[4f]"></a>__rt_memclr_w</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset_w
 </UL>
 
-<P><STRONG><a name="[b0]"></a>strcmp</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, strcmp.o(.text))
+<P><STRONG><a name="[bd]"></a>strcmp</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, strcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = strcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
 </UL>
 
-<P><STRONG><a name="[de]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, aeabi_sdiv.o(.text), UNUSED)
+<P><STRONG><a name="[ec]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, aeabi_sdiv.o(.text), UNUSED)
 
-<P><STRONG><a name="[97]"></a>__aeabi_uidivmod</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, aeabi_sdiv.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ControlVoltageScaling
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
-<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_is_full
+<P><STRONG><a name="[99]"></a>__aeabi_uidivmod</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, aeabi_sdiv.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ControlVoltageScaling
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintUnsigned
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_is_full
 </UL>
 
-<P><STRONG><a name="[df]"></a>__aeabi_idiv</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text), UNUSED)
+<P><STRONG><a name="[ed]"></a>__aeabi_idiv</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text), UNUSED)
 
-<P><STRONG><a name="[e0]"></a>__aeabi_idivmod</STRONG> (Thumb, 326 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text), UNUSED)
+<P><STRONG><a name="[bb]"></a>__aeabi_idivmod</STRONG> (Thumb, 326 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintInt
+</UL>
 
-<P><STRONG><a name="[e1]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[ee]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
 <P><STRONG><a name="[4]"></a>__rt_heap_escrow</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
@@ -412,9 +420,9 @@ Global Symbols
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 
-<P><STRONG><a name="[e2]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+<P><STRONG><a name="[ef]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
 
-<P><STRONG><a name="[e3]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+<P><STRONG><a name="[f0]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
 
 <P><STRONG><a name="[c]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
 
@@ -435,10 +443,10 @@ Global Symbols
 <P><STRONG><a name="[3b]"></a>_init_alloc</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, init_alloc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = _init_alloc &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
-<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Initialize
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Initialize
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_heap_2
 </UL>
@@ -457,13 +465,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
 </UL>
 
-<P><STRONG><a name="[e4]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[f1]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[57]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[e5]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[f2]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[50]"></a>__Heap_ProvideMemory</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, h1_extend.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __Heap_ProvideMemory &rArr; free
@@ -484,11 +492,11 @@ Global Symbols
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Broken
 </UL>
 
-<P><STRONG><a name="[e6]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[f3]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[e7]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[f4]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[e8]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[f5]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, indicate_semi.o(.text), UNUSED)
 
 <P><STRONG><a name="[3d]"></a>__user_setup_stackheap</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -545,12 +553,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
 </UL>
 
-<P><STRONG><a name="[5d]"></a>AppUpdate_Process</STRONG> (Thumb, 150 bytes, Stack size 280 bytes, flash_update_handle.o(i.AppUpdate_Process))
-<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = AppUpdate_Process &rArr; BootFlagState_Write &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+<P><STRONG><a name="[5d]"></a>AppUpdate_Process</STRONG> (Thumb, 158 bytes, Stack size 280 bytes, flash_update_handle.o(i.AppUpdate_Process))
+<BR><BR>[Stack]<UL><LI>Max Depth = 632<LI>Call Chain = AppUpdate_Process &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Read
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JumpToAPP
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JumpToAPP
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlagState_Write
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlagState_Read
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
@@ -558,12 +567,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5f]"></a>BootFlagState_Read</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, flash_update_handle.o(i.BootFlagState_Read))
+<P><STRONG><a name="[5f]"></a>BootFlagState_Read</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, flash_update_handle.o(i.BootFlagState_Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = BootFlagState_Read &rArr; Flash_Read
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlag_Diag
+<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlag_Diag
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
 </UL>
 
@@ -575,386 +584,398 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
 </UL>
 
-<P><STRONG><a name="[64]"></a>BootFlag_Diag</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, flash_update_handle.o(i.BootFlag_Diag))
+<P><STRONG><a name="[65]"></a>BootFlag_Diag</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, flash_update_handle.o(i.BootFlag_Diag))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = BootFlag_Diag &rArr; BootFlagState_Read &rArr; Flash_Read
 </UL>
-<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JumpToAPP
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JumpToAPP
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlagState_Read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[65]"></a>CAN_DataDecode</STRONG> (Thumb, 110 bytes, Stack size 24 bytes, comm_update_handle.o(i.CAN_DataDecode))
+<P><STRONG><a name="[66]"></a>CAN_DataDecode</STRONG> (Thumb, 110 bytes, Stack size 24 bytes, comm_update_handle.o(i.CAN_DataDecode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = CAN_DataDecode &rArr; bms_UpdateChuck &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_start
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_apply
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_get_update_status
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
-<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_start
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_apply
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_get_update_status
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6b]"></a>ChipFlashDownload_Process</STRONG> (Thumb, 280 bytes, Stack size 64 bytes, flash_update_handle.o(i.ChipFlashDownload_Process))
-<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = ChipFlashDownload_Process &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+<P><STRONG><a name="[6c]"></a>ChipFlashDownload_Process</STRONG> (Thumb, 296 bytes, Stack size 40 bytes, flash_update_handle.o(i.ChipFlashDownload_Process))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = ChipFlashDownload_Process &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SystemReset
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SystemReset
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Read
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc32_compute
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc32_compute
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[88]"></a>Error_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<P><STRONG><a name="[8a]"></a>Error_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, main.o(i.Error_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
 </UL>
 
-<P><STRONG><a name="[91]"></a>FLASH_PageErase</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, stm32g0xx_hal_flash_ex.o(i.FLASH_PageErase))
+<P><STRONG><a name="[93]"></a>FLASH_PageErase</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, stm32g0xx_hal_flash_ex.o(i.FLASH_PageErase))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FLASH_PageErase
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
 </UL>
 
-<P><STRONG><a name="[6f]"></a>FLASH_WaitForLastOperation</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, stm32g0xx_hal_flash.o(i.FLASH_WaitForLastOperation))
+<P><STRONG><a name="[70]"></a>FLASH_WaitForLastOperation</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, stm32g0xx_hal_flash.o(i.FLASH_WaitForLastOperation))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
 </UL>
 
 <P><STRONG><a name="[60]"></a>Flash_Read</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32flash.o(i.Flash_Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = Flash_Read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlagState_Read
 </UL>
 
-<P><STRONG><a name="[61]"></a>Flash_Write</STRONG> (Thumb, 280 bytes, Stack size 56 bytes, stm32flash.o(i.Flash_Write))
+<P><STRONG><a name="[61]"></a>Flash_Write</STRONG> (Thumb, 298 bytes, Stack size 56 bytes, stm32flash.o(i.Flash_Write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Unlock
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Lock
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Unlock
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Lock
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlagState_Write
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
 </UL>
 
-<P><STRONG><a name="[8f]"></a>HAL_FDCAN_ActivateNotification</STRONG> (Thumb, 246 bytes, Stack size 40 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_ActivateNotification))
+<P><STRONG><a name="[77]"></a>HAL_Delay</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, stm32g0xx_hal.o(i.HAL_Delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_Delay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[91]"></a>HAL_FDCAN_ActivateNotification</STRONG> (Thumb, 246 bytes, Stack size 40 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_ActivateNotification))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_FDCAN_ActivateNotification
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
 </UL>
 
-<P><STRONG><a name="[76]"></a>HAL_FDCAN_AddMessageToTxFifoQ</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_AddMessageToTxFifoQ))
+<P><STRONG><a name="[78]"></a>HAL_FDCAN_AddMessageToTxFifoQ</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_AddMessageToTxFifoQ))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_FDCAN_AddMessageToTxFifoQ &rArr; FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FDCAN_CopyMessageToRAM
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
-</UL>
-
-<P><STRONG><a name="[83]"></a>HAL_FDCAN_ErrorCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_ErrorCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
 </UL>
 
-<P><STRONG><a name="[82]"></a>HAL_FDCAN_ErrorStatusCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_ErrorStatusCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[85]"></a>HAL_FDCAN_ErrorCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_ErrorCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[8d]"></a>HAL_FDCAN_GetRxFifoFillLevel</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_GetRxFifoFillLevel))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
+<P><STRONG><a name="[84]"></a>HAL_FDCAN_ErrorStatusCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_ErrorStatusCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[8c]"></a>HAL_FDCAN_GetRxMessage</STRONG> (Thumb, 218 bytes, Stack size 20 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_GetRxMessage))
+<P><STRONG><a name="[8f]"></a>HAL_FDCAN_GetRxFifoFillLevel</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_GetRxFifoFillLevel))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
+</UL>
+
+<P><STRONG><a name="[8e]"></a>HAL_FDCAN_GetRxMessage</STRONG> (Thumb, 248 bytes, Stack size 20 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_GetRxMessage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_FDCAN_GetRxMessage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
 </UL>
 
-<P><STRONG><a name="[79]"></a>HAL_FDCAN_HighPriorityMessageCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_HighPriorityMessageCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[7b]"></a>HAL_FDCAN_HighPriorityMessageCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_HighPriorityMessageCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[78]"></a>HAL_FDCAN_IRQHandler</STRONG> (Thumb, 364 bytes, Stack size 64 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = HAL_FDCAN_IRQHandler &rArr; HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
+<P><STRONG><a name="[7a]"></a>HAL_FDCAN_IRQHandler</STRONG> (Thumb, 372 bytes, Stack size 40 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = HAL_FDCAN_IRQHandler &rArr; HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxFifoEmptyCallback
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxEventFifoCallback
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxBufferCompleteCallback
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxBufferAbortCallback
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TimestampWraparoundCallback
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TimeoutOccurredCallback
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo1Callback
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_HighPriorityMessageCallback
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ErrorStatusCallback
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ErrorCallback
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxFifoEmptyCallback
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxEventFifoCallback
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxBufferCompleteCallback
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TxBufferAbortCallback
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TimestampWraparoundCallback
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_TimeoutOccurredCallback
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo1Callback
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_HighPriorityMessageCallback
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ErrorStatusCallback
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ErrorCallback
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM17_FDCAN_IT1_IRQHandler
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM16_FDCAN_IT0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[84]"></a>HAL_FDCAN_Init</STRONG> (Thumb, 412 bytes, Stack size 24 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = HAL_FDCAN_Init &rArr; HAL_FDCAN_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig
+<P><STRONG><a name="[86]"></a>HAL_FDCAN_Init</STRONG> (Thumb, 448 bytes, Stack size 24 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = HAL_FDCAN_Init &rArr; HAL_FDCAN_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FDCAN_CalcultateRamBlockAddresses
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FDCAN_CalcultateRamBlockAddresses
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
 </UL>
 
-<P><STRONG><a name="[85]"></a>HAL_FDCAN_MspInit</STRONG> (Thumb, 148 bytes, Stack size 112 bytes, stm32g0xx_hal_msp.o(i.HAL_FDCAN_MspInit))
-<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = HAL_FDCAN_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig
+<P><STRONG><a name="[87]"></a>HAL_FDCAN_MspInit</STRONG> (Thumb, 148 bytes, Stack size 112 bytes, stm32g0xx_hal_msp.o(i.HAL_FDCAN_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = HAL_FDCAN_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
 </UL>
 
-<P><STRONG><a name="[7c]"></a>HAL_FDCAN_RxFifo0Callback</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, can.o(i.HAL_FDCAN_RxFifo0Callback))
+<P><STRONG><a name="[7e]"></a>HAL_FDCAN_RxFifo0Callback</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, can.o(i.HAL_FDCAN_RxFifo0Callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_GetRxMessage
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_GetRxFifoFillLevel
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ActivateNotification
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_data
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_GetRxMessage
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_GetRxFifoFillLevel
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ActivateNotification
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_data
 </UL>
-<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
-</UL>
-
-<P><STRONG><a name="[7d]"></a>HAL_FDCAN_RxFifo1Callback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_RxFifo1Callback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[a8]"></a>HAL_FDCAN_Start</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_Start))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
+<P><STRONG><a name="[7f]"></a>HAL_FDCAN_RxFifo1Callback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_RxFifo1Callback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[81]"></a>HAL_FDCAN_TimeoutOccurredCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TimeoutOccurredCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[aa]"></a>HAL_FDCAN_Start</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_Start))
+<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
 </UL>
 
-<P><STRONG><a name="[80]"></a>HAL_FDCAN_TimestampWraparoundCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TimestampWraparoundCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[83]"></a>HAL_FDCAN_TimeoutOccurredCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TimeoutOccurredCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7a]"></a>HAL_FDCAN_TxBufferAbortCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxBufferAbortCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[82]"></a>HAL_FDCAN_TimestampWraparoundCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TimestampWraparoundCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7f]"></a>HAL_FDCAN_TxBufferCompleteCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxBufferCompleteCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[7c]"></a>HAL_FDCAN_TxBufferAbortCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxBufferAbortCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7b]"></a>HAL_FDCAN_TxEventFifoCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxEventFifoCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[81]"></a>HAL_FDCAN_TxBufferCompleteCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxBufferCompleteCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7e]"></a>HAL_FDCAN_TxFifoEmptyCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxFifoEmptyCallback))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<P><STRONG><a name="[7d]"></a>HAL_FDCAN_TxEventFifoCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxEventFifoCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 
-<P><STRONG><a name="[72]"></a>HAL_FLASHEx_Erase</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, stm32g0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase))
+<P><STRONG><a name="[80]"></a>HAL_FDCAN_TxFifoEmptyCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_hal_fdcan.o(i.HAL_FDCAN_TxFifoEmptyCallback))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+</UL>
+
+<P><STRONG><a name="[73]"></a>HAL_FLASHEx_Erase</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, stm32g0xx_hal_flash_ex.o(i.HAL_FLASHEx_Erase))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HAL_FLASHEx_Erase &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_MassErase
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_PageErase
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_MassErase
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_PageErase
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
 </UL>
 <BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
 </UL>
 
-<P><STRONG><a name="[75]"></a>HAL_FLASH_Lock</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32g0xx_hal_flash.o(i.HAL_FLASH_Lock))
+<P><STRONG><a name="[74]"></a>HAL_FLASH_Lock</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32g0xx_hal_flash.o(i.HAL_FLASH_Lock))
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
 </UL>
 
-<P><STRONG><a name="[74]"></a>HAL_FLASH_Program</STRONG> (Thumb, 88 bytes, Stack size 40 bytes, stm32g0xx_hal_flash.o(i.HAL_FLASH_Program))
+<P><STRONG><a name="[76]"></a>HAL_FLASH_Program</STRONG> (Thumb, 92 bytes, Stack size 40 bytes, stm32g0xx_hal_flash.o(i.HAL_FLASH_Program))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Program_Fast
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Program_DoubleWord
+<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Program_Fast
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Program_DoubleWord
 </UL>
 <BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
 </UL>
 
-<P><STRONG><a name="[71]"></a>HAL_FLASH_Unlock</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32g0xx_hal_flash.o(i.HAL_FLASH_Unlock))
+<P><STRONG><a name="[72]"></a>HAL_FLASH_Unlock</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32g0xx_hal_flash.o(i.HAL_FLASH_Unlock))
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
 </UL>
 
-<P><STRONG><a name="[89]"></a>HAL_GPIO_Init</STRONG> (Thumb, 336 bytes, Stack size 20 bytes, stm32g0xx_hal_gpio.o(i.HAL_GPIO_Init))
+<P><STRONG><a name="[8b]"></a>HAL_GPIO_Init</STRONG> (Thumb, 316 bytes, Stack size 20 bytes, stm32g0xx_hal_gpio.o(i.HAL_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
 </UL>
 
-<P><STRONG><a name="[70]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32g0xx_hal.o(i.HAL_GetTick))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<P><STRONG><a name="[71]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32g0xx_hal.o(i.HAL_GetTick))
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
 </UL>
 
-<P><STRONG><a name="[ad]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32g0xx_hal.o(i.HAL_IncTick))
+<P><STRONG><a name="[b9]"></a>HAL_IncTick</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32g0xx_hal.o(i.HAL_IncTick))
 <BR><BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
-<P><STRONG><a name="[94]"></a>HAL_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, stm32g0xx_hal.o(i.HAL_Init))
+<P><STRONG><a name="[96]"></a>HAL_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, stm32g0xx_hal.o(i.HAL_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = HAL_Init &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>HAL_InitTick</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, stm32g0xx_hal.o(i.HAL_InitTick))
+<P><STRONG><a name="[97]"></a>HAL_InitTick</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, stm32g0xx_hal.o(i.HAL_InitTick))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_InitTick &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 </UL>
 
-<P><STRONG><a name="[96]"></a>HAL_MspInit</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, stm32g0xx_hal_msp.o(i.HAL_MspInit))
+<P><STRONG><a name="[98]"></a>HAL_MspInit</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, stm32g0xx_hal_msp.o(i.HAL_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_MspInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSCFG_StrobeDBattpinsConfig
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSCFG_StrobeDBattpinsConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
-</UL>
-
-<P><STRONG><a name="[8b]"></a>HAL_NVIC_EnableIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32g0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 </UL>
 
-<P><STRONG><a name="[8a]"></a>HAL_NVIC_SetPriority</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, stm32g0xx_hal_cortex.o(i.HAL_NVIC_SetPriority))
+<P><STRONG><a name="[8d]"></a>HAL_NVIC_EnableIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32g0xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+</UL>
+
+<P><STRONG><a name="[8c]"></a>HAL_NVIC_SetPriority</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, stm32g0xx_hal_cortex.o(i.HAL_NVIC_SetPriority))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
-</UL>
-
-<P><STRONG><a name="[6e]"></a>HAL_NVIC_SystemReset</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32g0xx_hal_cortex.o(i.HAL_NVIC_SystemReset))
-<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 
-<P><STRONG><a name="[9b]"></a>HAL_PWREx_ControlVoltageScaling</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, stm32g0xx_hal_pwr_ex.o(i.HAL_PWREx_ControlVoltageScaling))
+<P><STRONG><a name="[6f]"></a>HAL_NVIC_SystemReset</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32g0xx_hal_cortex.o(i.HAL_NVIC_SystemReset))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+</UL>
+
+<P><STRONG><a name="[9d]"></a>HAL_PWREx_ControlVoltageScaling</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, stm32g0xx_hal_pwr_ex.o(i.HAL_PWREx_ControlVoltageScaling))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_PWREx_ControlVoltageScaling
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-</UL>
-
-<P><STRONG><a name="[87]"></a>HAL_RCCEx_PeriphCLKConfig</STRONG> (Thumb, 618 bytes, Stack size 32 bytes, stm32g0xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = HAL_RCCEx_PeriphCLKConfig
-</UL>
-<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-</UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[9c]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 318 bytes, Stack size 24 bytes, stm32g0xx_hal_rcc.o(i.HAL_RCC_ClockConfig))
+<P><STRONG><a name="[89]"></a>HAL_RCCEx_PeriphCLKConfig</STRONG> (Thumb, 652 bytes, Stack size 40 bytes, stm32g0xx_hal_rcc_ex.o(i.HAL_RCCEx_PeriphCLKConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_RCCEx_PeriphCLKConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_MspInit
+</UL>
+
+<P><STRONG><a name="[9e]"></a>HAL_RCC_ClockConfig</STRONG> (Thumb, 348 bytes, Stack size 24 bytes, stm32g0xx_hal_rcc.o(i.HAL_RCC_ClockConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HAL_RCC_ClockConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[9d]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 130 bytes, Stack size 8 bytes, stm32g0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq))
+<P><STRONG><a name="[9f]"></a>HAL_RCC_GetSysClockFreq</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, stm32g0xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_RCC_GetSysClockFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
-</UL>
-
-<P><STRONG><a name="[9e]"></a>HAL_RCC_OscConfig</STRONG> (Thumb, 1078 bytes, Stack size 24 bytes, stm32g0xx_hal_rcc.o(i.HAL_RCC_OscConfig))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = HAL_RCC_OscConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
-</UL>
-<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 </UL>
 
-<P><STRONG><a name="[99]"></a>HAL_SYSCFG_StrobeDBattpinsConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32g0xx_hal.o(i.HAL_SYSCFG_StrobeDBattpinsConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
+<P><STRONG><a name="[a0]"></a>HAL_RCC_OscConfig</STRONG> (Thumb, 1156 bytes, Stack size 32 bytes, stm32g0xx_hal_rcc.o(i.HAL_RCC_OscConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = HAL_RCC_OscConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[98]"></a>HAL_SYSTICK_Config</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, stm32g0xx_hal_cortex.o(i.HAL_SYSTICK_Config))
+<P><STRONG><a name="[9b]"></a>HAL_SYSCFG_StrobeDBattpinsConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32g0xx_hal.o(i.HAL_SYSCFG_StrobeDBattpinsConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_MspInit
+</UL>
+
+<P><STRONG><a name="[9a]"></a>HAL_SYSTICK_Config</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, stm32g0xx_hal_cortex.o(i.HAL_SYSTICK_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_SYSTICK_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
 
-<P><STRONG><a name="[ab]"></a>HAL_TIMEx_MasterConfigSynchronization</STRONG> (Thumb, 108 bytes, Stack size 20 bytes, stm32g0xx_hal_tim_ex.o(i.HAL_TIMEx_MasterConfigSynchronization))
+<P><STRONG><a name="[ad]"></a>HAL_TIMEx_MasterConfigSynchronization</STRONG> (Thumb, 108 bytes, Stack size 20 bytes, stm32g0xx_hal_tim_ex.o(i.HAL_TIMEx_MasterConfigSynchronization))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_TIMEx_MasterConfigSynchronization
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
-<P><STRONG><a name="[9f]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, stm32g0xx_hal_tim.o(i.HAL_TIM_Base_Init))
+<P><STRONG><a name="[a1]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, stm32g0xx_hal_tim.o(i.HAL_TIM_Base_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_TIM_Base_Init &rArr; TIM_Base_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
-<P><STRONG><a name="[a0]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, stm32g0xx_hal_msp.o(i.HAL_TIM_Base_MspInit))
+<P><STRONG><a name="[a2]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, stm32g0xx_hal_msp.o(i.HAL_TIM_Base_MspInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_TIM_Base_MspInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
 
-<P><STRONG><a name="[ac]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, stm32g0xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
-<BR><BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<P><STRONG><a name="[ae]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, stm32g0xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
-<P><STRONG><a name="[a2]"></a>HAL_TIM_ConfigClockSource</STRONG> (Thumb, 220 bytes, Stack size 24 bytes, stm32g0xx_hal_tim.o(i.HAL_TIM_ConfigClockSource))
+<P><STRONG><a name="[a4]"></a>HAL_TIM_ConfigClockSource</STRONG> (Thumb, 232 bytes, Stack size 24 bytes, stm32g0xx_hal_tim.o(i.HAL_TIM_ConfigClockSource))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = HAL_TIM_ConfigClockSource &rArr; TIM_TI2_ConfigInputStage
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI2_ConfigInputStage
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI1_ConfigInputStage
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITRx_SetConfig
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI2_ConfigInputStage
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI1_ConfigInputStage
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITRx_SetConfig
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
 </UL>
 
 <P><STRONG><a name="[10]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_it.o(i.HardFault_Handler))
@@ -964,8 +985,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
-<P><STRONG><a name="[63]"></a>JumpToAPP</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, flash_update_handle.o(i.JumpToAPP))
-<BR><BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlag_Diag
+<P><STRONG><a name="[64]"></a>JumpToAPP</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, flash_update_handle.o(i.JumpToAPP))
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlag_Diag
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
 </UL>
 
@@ -979,22 +1000,63 @@ Global Symbols
 <P><STRONG><a name="[12]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
+<P><STRONG><a name="[af]"></a>SEGGER_RTT_Write</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, segger_rtt.o(i.SEGGER_RTT_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteNoLock
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DoInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_vprintf
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_StoreChar
+</UL>
+
+<P><STRONG><a name="[b1]"></a>SEGGER_RTT_WriteNoLock</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, segger_rtt.o(i.SEGGER_RTT_WriteNoLock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_WriteNoCheck
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_WriteBlocking
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetAvailWriteSpace
+</UL>
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_Write
+</UL>
+
+<P><STRONG><a name="[63]"></a>SEGGER_RTT_printf</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, segger_rtt_printf.o(i.SEGGER_RTT_printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_vprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b5]"></a>SEGGER_RTT_vprintf</STRONG> (Thumb, 414 bytes, Stack size 128 bytes, segger_rtt_printf.o(i.SEGGER_RTT_vprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_StoreChar
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintUnsigned
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintInt
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
+</UL>
+
 <P><STRONG><a name="[11]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g0xx_it.o(i.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
 <P><STRONG><a name="[13]"></a>SysTick_Handler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, stm32g0xx_it.o(i.SysTick_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTick_Handler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_IncTick
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
-<P><STRONG><a name="[ae]"></a>SystemClock_Config</STRONG> (Thumb, 90 bytes, Stack size 88 bytes, main.o(i.SystemClock_Config))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = SystemClock_Config &rArr; HAL_RCC_OscConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
+<P><STRONG><a name="[ba]"></a>SystemClock_Config</STRONG> (Thumb, 90 bytes, Stack size 88 bytes, main.o(i.SystemClock_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = SystemClock_Config &rArr; HAL_RCC_OscConfig &rArr; HAL_InitTick &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ControlVoltageScaling
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ControlVoltageScaling
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1004,151 +1066,154 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(.text)
 </UL>
 <P><STRONG><a name="[29]"></a>TIM16_FDCAN_IT0_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, stm32g0xx_it.o(i.TIM16_FDCAN_IT0_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = TIM16_FDCAN_IT0_IRQHandler &rArr; HAL_FDCAN_IRQHandler &rArr; HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = TIM16_FDCAN_IT0_IRQHandler &rArr; HAL_FDCAN_IRQHandler &rArr; HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
 <P><STRONG><a name="[2a]"></a>TIM17_FDCAN_IT1_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, stm32g0xx_it.o(i.TIM17_FDCAN_IT1_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = TIM17_FDCAN_IT1_IRQHandler &rArr; HAL_FDCAN_IRQHandler &rArr; HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = TIM17_FDCAN_IT1_IRQHandler &rArr; HAL_FDCAN_IRQHandler &rArr; HAL_FDCAN_RxFifo0Callback &rArr; can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g0b1xx.o(RESET)
 </UL>
-<P><STRONG><a name="[a1]"></a>TIM_Base_SetConfig</STRONG> (Thumb, 138 bytes, Stack size 20 bytes, stm32g0xx_hal_tim.o(i.TIM_Base_SetConfig))
+<P><STRONG><a name="[a3]"></a>TIM_Base_SetConfig</STRONG> (Thumb, 136 bytes, Stack size 20 bytes, stm32g0xx_hal_tim.o(i.TIM_Base_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
 
-<P><STRONG><a name="[a3]"></a>TIM_ETR_SetConfig</STRONG> (Thumb, 22 bytes, Stack size 12 bytes, stm32g0xx_hal_tim.o(i.TIM_ETR_SetConfig))
+<P><STRONG><a name="[a5]"></a>TIM_ETR_SetConfig</STRONG> (Thumb, 22 bytes, Stack size 12 bytes, stm32g0xx_hal_tim.o(i.TIM_ETR_SetConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_ETR_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 </UL>
 
-<P><STRONG><a name="[af]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, stm32g0xx_hal_dma.o(i.__ARM_common_switch8))
+<P><STRONG><a name="[bc]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, stm32g0xx_hal_dma.o(i.__ARM_common_switch8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
 </UL>
 
-<P><STRONG><a name="[6a]"></a>bms_UpdateChuck</STRONG> (Thumb, 286 bytes, Stack size 24 bytes, comm_update_handle.o(i.bms_UpdateChuck))
+<P><STRONG><a name="[6b]"></a>bms_UpdateChuck</STRONG> (Thumb, 298 bytes, Stack size 24 bytes, comm_update_handle.o(i.bms_UpdateChuck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = bms_UpdateChuck &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flash_Write
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc32_compute
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc32_compute
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
 </UL>
 
-<P><STRONG><a name="[67]"></a>bms_get_update_status</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, comm_update_handle.o(i.bms_get_update_status))
+<P><STRONG><a name="[68]"></a>bms_get_update_status</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, comm_update_handle.o(i.bms_get_update_status))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = bms_get_update_status &rArr; can_tx &rArr; HAL_FDCAN_AddMessageToTxFifoQ &rArr; FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
 </UL>
 
-<P><STRONG><a name="[68]"></a>bms_update_apply</STRONG> (Thumb, 176 bytes, Stack size 32 bytes, comm_update_handle.o(i.bms_update_apply))
+<P><STRONG><a name="[69]"></a>bms_update_apply</STRONG> (Thumb, 212 bytes, Stack size 32 bytes, comm_update_handle.o(i.bms_update_apply))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = bms_update_apply &rArr; can_tx &rArr; HAL_FDCAN_AddMessageToTxFifoQ &rArr; FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
 </UL>
 
-<P><STRONG><a name="[69]"></a>bms_update_start</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, comm_update_handle.o(i.bms_update_start))
+<P><STRONG><a name="[6a]"></a>bms_update_start</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, comm_update_handle.o(i.bms_update_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = bms_update_start &rArr; can_tx &rArr; HAL_FDCAN_AddMessageToTxFifoQ &rArr; FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_tx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
 </UL>
 
-<P><STRONG><a name="[a9]"></a>can_circulbuf_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, can_circularbuf.o(i.can_circulbuf_init))
+<P><STRONG><a name="[ab]"></a>can_circulbuf_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, can_circularbuf.o(i.can_circulbuf_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = can_circulbuf_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
 <BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
 </UL>
 
-<P><STRONG><a name="[b3]"></a>can_is_empty</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, can_circularbuf.o(i.can_is_empty))
-<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
+<P><STRONG><a name="[c0]"></a>can_is_empty</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, can_circularbuf.o(i.can_is_empty))
+<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_take_data
 </UL>
 
-<P><STRONG><a name="[b1]"></a>can_is_full</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, can_circularbuf.o(i.can_is_full))
+<P><STRONG><a name="[be]"></a>can_is_full</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, can_circularbuf.o(i.can_is_full))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = can_is_full
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
 </UL>
 
-<P><STRONG><a name="[b2]"></a>can_put_data</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, can_circularbuf.o(i.can_put_data))
+<P><STRONG><a name="[bf]"></a>can_put_data</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, can_circularbuf.o(i.can_put_data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = can_put_data &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_is_full
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_is_full
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_data
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_data
 </UL>
 
-<P><STRONG><a name="[8e]"></a>can_rx_data</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, can_circularbuf.o(i.can_rx_data))
+<P><STRONG><a name="[90]"></a>can_rx_data</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, can_circularbuf.o(i.can_rx_data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = can_rx_data &rArr; can_put_data &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_put_data
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
 </UL>
 
-<P><STRONG><a name="[66]"></a>can_take_data</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, can_circularbuf.o(i.can_take_data))
+<P><STRONG><a name="[67]"></a>can_take_data</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, can_circularbuf.o(i.can_take_data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = can_take_data &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 <LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_is_empty
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_is_empty
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
 </UL>
 
-<P><STRONG><a name="[6d]"></a>can_tx</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, can.o(i.can_tx))
+<P><STRONG><a name="[6e]"></a>can_tx</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, can.o(i.can_tx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = can_tx &rArr; HAL_FDCAN_AddMessageToTxFifoQ &rArr; FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_AddMessageToTxFifoQ
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_AddMessageToTxFifoQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_start
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_apply
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_get_update_status
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_start
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_update_apply
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_get_update_status
 </UL>
 
-<P><STRONG><a name="[6c]"></a>crc32_compute</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, sys.o(i.crc32_compute))
+<P><STRONG><a name="[6d]"></a>crc32_compute</STRONG> (Thumb, 56 bytes, Stack size 20 bytes, sys.o(i.crc32_compute))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = crc32_compute
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bms_UpdateChuck
 </UL>
 
-<P><STRONG><a name="[41]"></a>main</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = main &rArr; AppUpdate_Process &rArr; BootFlagState_Write &rArr; Flash_Write &rArr; HAL_FLASH_Program &rArr; FLASH_WaitForLastOperation
+<P><STRONG><a name="[41]"></a>main</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 632<LI>Call Chain = main &rArr; AppUpdate_Process &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
-<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlag_Diag
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChipFlashDownload_Process
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_DataDecode
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BootFlag_Diag
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdate_Process
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_FDCAN1_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -1156,75 +1221,141 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[a7]"></a>MX_FDCAN1_Init</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, main.o(i.MX_FDCAN1_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = MX_FDCAN1_Init &rArr; HAL_FDCAN_Init &rArr; HAL_FDCAN_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig
+<P><STRONG><a name="[a9]"></a>MX_FDCAN1_Init</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, main.o(i.MX_FDCAN1_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = MX_FDCAN1_Init &rArr; HAL_FDCAN_Init &rArr; HAL_FDCAN_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_circulbuf_init
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Start
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ActivateNotification
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_circulbuf_init
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Start
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_ActivateNotification
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[aa]"></a>MX_TIM3_Init</STRONG> (Thumb, 106 bytes, Stack size 40 bytes, main.o(i.MX_TIM3_Init))
+<P><STRONG><a name="[c1]"></a>MX_GPIO_Init</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, main.o(i.MX_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MX_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ac]"></a>MX_TIM3_Init</STRONG> (Thumb, 106 bytes, Stack size 40 bytes, main.o(i.MX_TIM3_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = MX_TIM3_Init &rArr; HAL_TIM_ConfigClockSource &rArr; TIM_TI2_ConfigInputStage
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[86]"></a>FDCAN_CalcultateRamBlockAddresses</STRONG> (Thumb, 104 bytes, Stack size 12 bytes, stm32g0xx_hal_fdcan.o(i.FDCAN_CalcultateRamBlockAddresses))
+<P><STRONG><a name="[88]"></a>FDCAN_CalcultateRamBlockAddresses</STRONG> (Thumb, 104 bytes, Stack size 12 bytes, stm32g0xx_hal_fdcan.o(i.FDCAN_CalcultateRamBlockAddresses))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = FDCAN_CalcultateRamBlockAddresses
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_Init
 </UL>
 
-<P><STRONG><a name="[77]"></a>FDCAN_CopyMessageToRAM</STRONG> (Thumb, 102 bytes, Stack size 20 bytes, stm32g0xx_hal_fdcan.o(i.FDCAN_CopyMessageToRAM))
+<P><STRONG><a name="[79]"></a>FDCAN_CopyMessageToRAM</STRONG> (Thumb, 108 bytes, Stack size 20 bytes, stm32g0xx_hal_fdcan.o(i.FDCAN_CopyMessageToRAM))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_AddMessageToTxFifoQ
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_AddMessageToTxFifoQ
 </UL>
 
-<P><STRONG><a name="[93]"></a>FLASH_Program_DoubleWord</STRONG> (Thumb, 22 bytes, Stack size 12 bytes, stm32g0xx_hal_flash.o(i.FLASH_Program_DoubleWord))
+<P><STRONG><a name="[95]"></a>FLASH_Program_DoubleWord</STRONG> (Thumb, 22 bytes, Stack size 12 bytes, stm32g0xx_hal_flash.o(i.FLASH_Program_DoubleWord))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = FLASH_Program_DoubleWord
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
 </UL>
 
-<P><STRONG><a name="[92]"></a>FLASH_Program_Fast</STRONG> (Thumb, 48 bytes, Stack size 12 bytes, stm32g0xx_hal_flash.o(i.FLASH_Program_Fast))
+<P><STRONG><a name="[94]"></a>FLASH_Program_Fast</STRONG> (Thumb, 50 bytes, Stack size 12 bytes, stm32g0xx_hal_flash.o(i.FLASH_Program_Fast))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = FLASH_Program_Fast
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASH_Program
 </UL>
 
-<P><STRONG><a name="[90]"></a>FLASH_MassErase</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32g0xx_hal_flash_ex.o(i.FLASH_MassErase))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
+<P><STRONG><a name="[92]"></a>FLASH_MassErase</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32g0xx_hal_flash_ex.o(i.FLASH_MassErase))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FLASHEx_Erase
 </UL>
 
-<P><STRONG><a name="[9a]"></a>__NVIC_SetPriority</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, stm32g0xx_hal_cortex.o(i.__NVIC_SetPriority))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
+<P><STRONG><a name="[9c]"></a>__NVIC_SetPriority</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, stm32g0xx_hal_cortex.o(i.__NVIC_SetPriority))
+<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_Config
 </UL>
 
-<P><STRONG><a name="[a6]"></a>TIM_ITRx_SetConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32g0xx_hal_tim.o(i.TIM_ITRx_SetConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+<P><STRONG><a name="[a7]"></a>TIM_ITRx_SetConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32g0xx_hal_tim.o(i.TIM_ITRx_SetConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 </UL>
 
-<P><STRONG><a name="[a4]"></a>TIM_TI1_ConfigInputStage</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32g0xx_hal_tim.o(i.TIM_TI1_ConfigInputStage))
+<P><STRONG><a name="[a6]"></a>TIM_TI1_ConfigInputStage</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32g0xx_hal_tim.o(i.TIM_TI1_ConfigInputStage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_TI1_ConfigInputStage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
 </UL>
 
-<P><STRONG><a name="[a5]"></a>TIM_TI2_ConfigInputStage</STRONG> (Thumb, 38 bytes, Stack size 12 bytes, stm32g0xx_hal_tim.o(i.TIM_TI2_ConfigInputStage))
+<P><STRONG><a name="[a8]"></a>TIM_TI2_ConfigInputStage</STRONG> (Thumb, 38 bytes, Stack size 12 bytes, stm32g0xx_hal_tim.o(i.TIM_TI2_ConfigInputStage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_TI2_ConfigInputStage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+</UL>
+
+<P><STRONG><a name="[b0]"></a>_DoInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, segger_rtt.o(i._DoInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _DoInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_Write
+</UL>
+
+<P><STRONG><a name="[b2]"></a>_GetAvailWriteSpace</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, segger_rtt.o(i._GetAvailWriteSpace))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteNoLock
+</UL>
+
+<P><STRONG><a name="[b4]"></a>_WriteBlocking</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, segger_rtt.o(i._WriteBlocking))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteNoLock
+</UL>
+
+<P><STRONG><a name="[b3]"></a>_WriteNoCheck</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, segger_rtt.o(i._WriteNoCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _WriteNoCheck &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteNoLock
+</UL>
+
+<P><STRONG><a name="[b7]"></a>_PrintInt</STRONG> (Thumb, 230 bytes, Stack size 48 bytes, segger_rtt_printf.o(i._PrintInt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_StoreChar
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintUnsigned
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_vprintf
+</UL>
+
+<P><STRONG><a name="[b8]"></a>_PrintUnsigned</STRONG> (Thumb, 226 bytes, Stack size 40 bytes, segger_rtt_printf.o(i._PrintUnsigned))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_StoreChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_vprintf
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintInt
+</UL>
+
+<P><STRONG><a name="[b6]"></a>_StoreChar</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, segger_rtt_printf.o(i._StoreChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = _StoreChar &rArr; SEGGER_RTT_Write &rArr; SEGGER_RTT_WriteNoLock &rArr; _WriteBlocking &rArr; __aeabi_memcpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_vprintf
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintUnsigned
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintInt
 </UL>
 <P>
 <H3>
