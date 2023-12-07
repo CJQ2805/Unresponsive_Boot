@@ -80,7 +80,6 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-  HAL_Delay(100);
   /* USER CODE BEGIN Init */
   SEGGER_RTT_printf(0,"IN BOOT\r\n");
   /* USER CODE END Init */

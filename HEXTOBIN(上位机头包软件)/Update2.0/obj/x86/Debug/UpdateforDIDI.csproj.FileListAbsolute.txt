@@ -1,0 +1,304 @@
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\bin\Debug\quqi.pdb
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+E:\DRY\HT_WORKSPACE\DIDI\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\quqi.pdb
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+G:\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\quqi.pdb
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+F:\项目整合_新\SCUD\滴滴\DIDI上位机\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\bin\Debug\quqi.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\新建文件夹\DIDI_BOOT3\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\新建文件夹\GB\OTA-GB\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+C:\Users\Administrator.PC-20160828ZDHJ\Desktop\W\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.exe
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.pdb
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.exe
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\bin\Debug\UpdateforDIDI.pdb
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.Properties.Resources.resources
+F:\1_WORK\GB\GBOTA\DIDI_BOOT\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\bin\Debug\GB_OTA.exe
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\bin\Debug\GB_OTA.pdb
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\1_WORK\GB\GBOTA\GB_OTA\Update2.0\obj\x86\Debug\GB_OTA.pdb
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\obj\x86\Debug\GB_OTA.exe
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\obj\x86\Debug\GB_OTA.pdb
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\bin\Debug\GB_OTA.exe
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\bin\Debug\GB_OTA.pdb
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+C:\Users\20181210008\Desktop\GB_OTA\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.exe
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.pdb
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\bin\Debug\GB_OTA.exe
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\bin\Debug\GB_OTA.pdb
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+C:\Users\20181210008\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.exe
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.pdb
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\bin\Debug\GB_OTA.exe
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\bin\Debug\GB_OTA.pdb
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+C:\Users\20190222019\Desktop\GB_OTA-C100190601\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\GB_OTA.exe
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\GB_OTA.pdb
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\bin\Debug\GB_OTA.exe
+C:\Users\20190222019\Desktop\GB_OTA-C100190601 - 副本\Update2.0\bin\Debug\GB_OTA.pdb
+H:\新建文件夹 (5)\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\GB_OTA.exe
+H:\新建文件夹 (5)\GB_OTA-C100190601 - 副本\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\GB_OTA-C100190601\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\bin\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C100190621\Update2.0\bin\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\bin\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\bin\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190621\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\bin\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\bin\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190625\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\bin\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\bin\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\bin\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\bin\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190627 垃圾\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTA.exe
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTA.pdb
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\0work\Grab\Grab-OTA\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTA.exe
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTA.pdb
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojAssemblyReference.cache
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTA.Properties.Resources.resources
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTA.exe
+C:\Users\20190306638\Desktop\GB3663\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTA.pdb
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojAssemblyReference.cache
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTB.exe
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTB.pdb
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\Users\20190306638\Desktop\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTB.exe
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTB.pdb
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\quqi.dll
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\admin\Desktop\寄存器\GB3663升级(1)\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTB.exe
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\bin\Debug\GB_OTB.pdb
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\寄存器\GB3663升级\GB3663加包头\GB_OTA-C000190628\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+F:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+H:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+H:\WO\LIME-V4\HEXTOBIN\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\bin\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\bin\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\bin\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\bin\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\WORK\Lime-B20s\上位机\C190628000_HEXTOBIN_201227 - 副本\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csprojResolveAssemblyReference.cache
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+C:\WORK\Lime-B20s\上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.Cache
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.AssemblyReference.cache
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+E:\Work\Lime-B40s-ST\Comm_tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.AssemblyReference.cache
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+F:\Work\Work\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.AssemblyReference.cache
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+F:\Work\Work\old\Lime-B42\Comm Tool\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe.config
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.exe
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\bin\Debug\GB_OTB.pdb
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.AssemblyReference.cache
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.SuggestedBindingRedirects.cache
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.exe
+E:\wechat\WeChat Files\wxid_ubsfi0u7gav622\FileStorage\File\2023-02\HEXTOBIN\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.pdb
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.AssemblyReference.cache
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.SuggestedBindingRedirects.cache
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\WindowsFormsApplication1.ReceiveBox.resources
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\GB_OTB.Properties.Resources.resources
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.GenerateResource.cache
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CoreCompileInputs.cache
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\UpdateforDIDI.csproj.CopyComplete
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\bin\Debug\Comotomo升级文件生成工具.exe.config
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\bin\Debug\Comotomo升级文件生成工具.exe
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\bin\Debug\Comotomo升级文件生成工具.pdb
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\Comotomo升级文件生成工具.exe
+W:\ww\Comotomo\Comotomo上位机\HEXTOBIN\Update2.0\obj\x86\Debug\Comotomo升级文件生成工具.pdb

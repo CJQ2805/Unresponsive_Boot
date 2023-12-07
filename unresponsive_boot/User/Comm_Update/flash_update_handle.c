@@ -186,7 +186,6 @@ uint8_t AppUpdate_Process(void)
             data[2] = (uint8_t)APP_UPDATA_JUMP;
             data[3] = (uint8_t)APP_UPDATA_JUMP;
             BootFlagState_Write(data);
-			SEGGER_RTT_printf(0,"JumpToAPP \r\n");	
             JumpToAPP();
 			HAL_Delay(50);
         }

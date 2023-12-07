@@ -7,6 +7,7 @@
 #include "CAN_CircularBuf.h"
 #include "stm32flash.h"
 #include "can.h"
+//不同的项目修改这里的内容，APP和BOOT需要同步的去修改
 uint8_t binString1[] = "SCUD-BMS";
 uint8_t binString2[] = "COMOTOMO";
 uint8_t binString3[] = "00000000";
@@ -122,7 +123,7 @@ void bms_get_update_status(void)
 void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 {
 	uint8_t u8lenEnd = 0;
-	
+	u8 au8data[8] = {0};	
 	if(gt_comm_update_handle.tcomm_update_data.u8FWUpateStatus == FIRM_RECEIVING)
 	{
 		
@@ -136,7 +137,10 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 			}
 			else
 			{
-				gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;			
+				gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;		
+				au8data[0] = ptrx_packet->au8data[0];
+				au8data[1] = 0xF3;
+				can_tx(BMS_UPDATE_ERROR,au8data,2);						
 			}
 			
 			break;
@@ -149,7 +153,10 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 			}
 			else
 			{
-				gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;	
+				gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;
+				au8data[0] = ptrx_packet->au8data[0];
+				au8data[1] = 0xF3;
+				can_tx(BMS_UPDATE_ERROR,au8data,2);					
 			}
 		
 			break;
@@ -163,6 +170,9 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 			else
 			{
 				gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;	
+				au8data[0] = ptrx_packet->au8data[0];
+				au8data[1] = 0xF3;
+				can_tx(BMS_UPDATE_ERROR,au8data,2);					
 			}			
 			
 			break;
@@ -185,6 +195,9 @@ void bms_UpdateChuck(pt_can_packet  ptrx_packet)
 				gt_comm_update_handle.ebms_update_chuck = BMS_UPDATE_CHUCK_FIRST_PACK;		
 				gt_comm_update_handle.tcomm_update_data.u32FWInsideBinSize = 0;
 				gt_comm_update_handle.tcomm_update_data.u32FWInsideBinCRC = 0;
+				au8data[0] = ptrx_packet->au8data[0];
+				au8data[1] = 0xF4;
+				can_tx(BMS_UPDATE_ERROR,au8data,2);					
 			}
 			else
 			{

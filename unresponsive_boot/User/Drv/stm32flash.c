@@ -95,18 +95,23 @@ uint8_t Flash_Write(uint32_t Address, uint8_t *buffer, uint32_t length)
 	return 1;
 }
 
+/**
+@CJQ2805
+此函数只能在STM32G0B1的片子上使用，因为页码是被我写死的，其他片子需要修改BANK的地址
+*/
 uint8_t Flash_Erase(uint32_t Address,uint32_t length)
 {
-	 uint32_t addr = Address;
-	 
-	 uint32_t PageError;
-	 if(Address < FLASH_BASE)
-	 {
-		return 0;  
-	 }
-	 HAL_FLASH_Unlock();
-	 __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_OPTVERR);
-	 EraseInitStruct.TypeErase   = FLASH_TYPEERASE_PAGES;
+	uint32_t addr = Address;
+
+	uint32_t PageError;
+	if(Address < FLASH_BASE)
+	{
+	return 0;  
+	}
+	HAL_FLASH_Unlock();
+	__HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_OPTVERR);
+	EraseInitStruct.TypeErase   = FLASH_TYPEERASE_PAGES;
+	
 	if(addr >= 0x8020000)
 	{
 		EraseInitStruct.Banks       = FLASH_BANK_2;
@@ -117,12 +122,22 @@ uint8_t Flash_Erase(uint32_t Address,uint32_t length)
 		EraseInitStruct.Banks       = FLASH_BANK_1;
 		EraseInitStruct.Page        = (Address - FLASH_BASE_ADDR)/0x800;
 	}
-	 EraseInitStruct.NbPages     = (length/FALSH_SECTOR_SIZE + 1);
-	 if(HAL_FLASHEx_Erase(&EraseInitStruct, &PageError) != HAL_OK)
-	 {
+	
+	if(!(length % FALSH_SECTOR_SIZE))
+	{
+		EraseInitStruct.NbPages = (length/FALSH_SECTOR_SIZE);		
+	}	
+	else
+	{
+		EraseInitStruct.NbPages = (length/FALSH_SECTOR_SIZE + 1);			
+	}
+	
+	if(HAL_FLASHEx_Erase(&EraseInitStruct, &PageError) != HAL_OK)
+	{
 		HAL_FLASH_Lock();
 		return 0;
-	 }
+	}
+	
 	HAL_FLASH_Lock();
 	return 1;
 }

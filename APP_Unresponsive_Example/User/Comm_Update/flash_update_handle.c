@@ -22,8 +22,7 @@ void ChipFlashDownload_Process(void)
 	
 	if(gt_comm_update_handle.u8fw_apply == 0x01)
 	{
-		gt_comm_update_handle.u8fw_apply = 0;
-		SEGGER_RTT_printf(0,"check = %d\r\n",gt_comm_update_handle.u8fw_apply);			
+		gt_comm_update_handle.u8fw_apply = 0;	
 		if(gt_comm_update_handle.u16bin_num != 0)
 		{
 			gt_comm_update_handle.u16bin_num = 0;
@@ -73,9 +72,8 @@ void ChipFlashDownload_Process(void)
 			can_tx(BMS_UPDATE_ERROR,au8data,1);			
 			return ;
 		}
-		SEGGER_RTT_printf(0,"HAL_NVIC_SystemReset \r\n");		
+
         //修改标志位 传递包数
-		HAL_Delay(100);
 		au8bootTempData[0] = (uint8_t)APP_UPDATING;
 		au8bootTempData[1] = (uint8_t)APP_UPDATING;
 		au8bootTempData[2] = (uint8_t)APP_UPDATING;

@@ -62,8 +62,7 @@ static void MX_TIM3_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t u8flag = 0;
-uint8_t  data[4]= {0};
+
 uint16_t BootFlagState_Write(uint8_t* data)
 {
 
@@ -91,9 +90,8 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-  HAL_Delay(100);
   /* USER CODE BEGIN Init */
-  SEGGER_RTT_printf(0,"IN APP\r\n");	
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -119,15 +117,6 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	CAN_DataDecode();
-	if(u8flag == 0)
-	{
-		u8flag = 1;
-//		data[0] = (uint8_t)APP_OK;
-//		data[1] = (uint8_t)APP_OK;
-//		data[2] = (uint8_t)APP_OK;
-//		data[3] = (uint8_t)APP_OK;
-//		BootFlagState_Write(data);
-	}
   }
   /* USER CODE END 3 */
 }
